@@ -36,3 +36,6 @@ Para evitar problemas de codificación al importar o compilar el proyecto en dis
 2. Arrancar la aplicación Spring Boot (`BackendApplication.java`).
 3. El servidor se levantará en el puerto `8080`.
 4. Se pueden probar todos los flujos utilizando **Swagger UI** (accediendo a la ruta correspondiente) o enviando peticiones mediante herramientas como Postman a `http://localhost:8080/...`
+
+### 6. Documentación de la API (Swagger UI)
+Para el testeo y la documentación interactiva de nuestros *endpoints*, hemos decidido integrar Swagger. Como la herramienta Spring Initializr no incluye esta funcionalidad por defecto al crear un proyecto Web, hemos añadido e integrado manualmente la dependencia `springdoc-openapi-starter-webmvc-ui` en nuestro `pom.xml`. Esto facilita enormemente la corrección y prueba de los 4 Casos de Uso directamente desde el navegador.
