@@ -31,7 +31,7 @@ Hemos añadido validaciones en la capa de servicios para asegurar la consistenci
 ### 5. Convenciones de Nomenclatura
 Para evitar problemas de codificación al importar o compilar el proyecto en distintos entornos, hemos optado por omitir caracteres especiales. Por ello, las clases relacionadas con las valoraciones se han nombrado como `Resena` y `ResenasService` (sin la ñ).
 
-## 🚀 Cómo ejecutar y probar el proyecto
+## Cómo ejecutar y probar el proyecto
 1. Clonar el repositorio.
 2. Arrancar la aplicación Spring Boot (`BackendApplication.java`).
 3. El servidor se levantará en el puerto `8080`.
