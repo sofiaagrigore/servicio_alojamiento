@@ -1,6 +1,6 @@
 # Backend - Sistema de Reservas de Alojamiento
 
-**Grupo E:** * Inés Cabrera Martín
+**Grupo E:** Inés Cabrera Martín
 * Sofía Alexandra Grigore Barfa
 * Paula Seva García
 * Valeria Seva García
