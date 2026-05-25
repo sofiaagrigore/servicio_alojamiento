@@ -17,7 +17,7 @@ public class ResenasRESTController {
     @GetMapping("/verificar/{reservaId}")
     public ResponseEntity<?> verificarReservaParaResena(@PathVariable String reservaId) {
         try {
-            resenasService.verificarPosibilidadDeResena(reservaId); // <-- Sin ñ
+            resenasService.verificarPosibilidadDeResena(reservaId);
             return ResponseEntity.ok(Map.of("status", "Permitido"));
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
@@ -27,7 +27,7 @@ public class ResenasRESTController {
     @PostMapping("/{alojamientoId}")
     public ResponseEntity<?> escribirResena(@PathVariable String alojamientoId, @RequestBody ResenaRequest request) {
         try {
-            resenasService.verificarPosibilidadDeResena(request.getReservaId()); // <-- Sin ñ
+            resenasService.verificarPosibilidadDeResena(request.getReservaId());
             
             Resena resena = resenasService.guardarResena(
                 alojamientoId,
