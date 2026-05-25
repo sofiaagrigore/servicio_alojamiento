@@ -15,4 +15,14 @@ public class ResenasRepository {
     public long countByAlojamientoId(String alojamientoId) {
         return db.values().stream().filter(r -> r.getAlojamientoId().equals(alojamientoId)).count();
     }
+    public ResenasRepository() {
+        Resena resena = new Resena(
+            "resena-001",
+            "1",   
+            "1",
+            5,
+            "Alojamiento increíble, repetiría sin duda."
+        );
+        db.put(resena.getId(), resena);
+    }
 }
